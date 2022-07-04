@@ -1,0 +1,292 @@
+:root{
+    --primary-color: #ff1900;
+
+    --primary-font: 'Dancing Script', cursive;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: var(--secundary-font);
+    margin: 0;
+}
+
+/* GENERAL STYLES */
+.width-container{
+    max-width: 1300px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 15px;
+}
+
+.content-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+p, li, a{
+    font-size: 12px;
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    width: 100%;
+    text-align: right;
+}
+
+.menu{text-align: center;}
+
+.menu li{
+    display: inline-block;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    margin: 0px 30px;
+    color: white;
+    line-height: 40px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.menu li a:hover{
+    color: var(--primary-color);
+    border-bottom: 2px var(--primary-color);
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.menu-icon i{
+    font-size: 2rem;
+    margin: 10px;
+    color: var(--primary-color);
+}
+
+/* BAR MENU */
+.bar-menu{
+    display: none;
+}
+
+/* HOME */
+#home{
+    height: 720px/* 100vh */;
+    background-color: transparent;
+    background-image: linear-gradient(
+        0deg,
+        #0009,
+        #0009
+    ),
+    url(../img/banner-home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-type{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 5rem;
+    margin: 0;
+}
+
+.home-content p{
+    font-family: var(--primary-font);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* ABOUT FOOD */
+.about-food__content-text h3{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.about-food-title p{text-align: center}
+
+.fa-check{
+    color: var(--primary-color);
+    width: 15px;
+    font-size: 0.7rem;
+}
+
+.about-food__img{
+    background-image: url(../img/food.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* ABOUT EVENTS */
+#about-event{
+    background-image: linear-gradient(
+        #0009,
+        #0009
+    ),
+    url(../img/food-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.event{
+    padding: 50px 15px;
+}
+
+.event-content{
+    background-color: #211;
+    color: white;
+    border-right: 5px solid var(--primary-color);
+    padding: 20px;
+    padding-top: 1px;
+}
+
+.event-content button{
+    background-color: #0000;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+
+}
+
+.event-content button:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+}
+
+.event-info{color: #aaa}
+.event-content span{color: var(--primary-color)}
+
+.event-image{
+    background-image: url(../img/food-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 15vh/* 40vh */;
+    width: 100%;
+}
+
+/* MENU */
+#menu-list{background-color: white;}
+#menu-list h3{margin-bottom: 0}
+.menu-item{margin: 30px 0px}
+.menu-item *{margin: 0px;}
+
+.menu-item__flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item__name{
+    color: var(--primary-color);
+    flex-grow: 1;
+    font-size: 0.8rem;
+}
+
+.menu-item__content{font-family: var(--primary-font)}
+
+#menu-list button{
+    display: block;
+    background-color: #0000;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    margin: 5px auto 30px auto;
+    border: 1px solid var(--primary-color);
+}
+
+#menu-list button:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer .logo-type{
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+.footer-icons i{
+    font-size: 2rem;
+    color: white;
+    margin: 10px 5px;
+}
+
+footer p:last-child{color: #aaa;}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width: 750px){
+
+    /* GENERAL STYLES */
+    p, li, a{font-size: 18px}
+    .section-title{font-size: 3rem}
+    .content-flex{flex-direction: row}
+
+    .width-container{
+        padding: 1px 50px;
+    }
+
+    /* HOME */
+    .menu-icon i{font-size: 3rem}
+    .logo-type{font-size: 10rem}
+    .home-content p{font-size: 2rem}
+
+    /* ABOUT FOOD */
+    .about-food__content-text h3{font-size: 2.5rem;}
+    .about-food__img{
+        border-bottom: 10px solid var(--primary-color);
+        height: 35vh;
+    }
+
+    /* ABOUT EVENTS */
+    .event{padding: 50px 50px;}
+    .event-content{border-right: 10px solid var(--primary-color)}
+    .event-content button{font-size: 1.2rem}
+    
+    .event-image{
+        height: 100;
+        width: 100%;
+    }
+}
